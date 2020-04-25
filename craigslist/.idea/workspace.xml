@@ -55,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587765229440</updated>
       <workItem from="1587767293146" duration="9254000" />
+      <workItem from="1587826510108" duration="5549000" />
     </task>
     <servers />
   </component>
@@ -62,6 +63,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="845" y="383" key="#Notifications" timestamp="1587833311963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040/1920.234.1280.984@0.0.1920.1040" timestamp="1587833311963" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587782261587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
