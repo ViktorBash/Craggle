@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6692df2e-d777-44f1-b68c-c4a52e545eba" name="Default Changelist" comment="" />
+    <list default="true" id="6692df2e-d777-44f1-b68c-c4a52e545eba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainapp/new_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainapp/new_search.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/craigslist/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -55,7 +62,10 @@
       <option name="presentableId" value="Default" />
       <updated>1587765229440</updated>
       <workItem from="1587767293146" duration="9254000" />
-      <workItem from="1587826510108" duration="5549000" />
+      <workItem from="1587826510108" duration="6450000" />
+      <workItem from="1587835792711" duration="611000" />
+      <workItem from="1587961843174" duration="87000" />
+      <workItem from="1588001636001" duration="2831000" />
     </task>
     <servers />
   </component>
@@ -71,10 +81,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.234.1280.984@0.0.1920.1040" timestamp="1587782261587" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587782224175">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587835803103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.234.1280.984@0.0.1920.1040" timestamp="1587782224175" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.234.1280.984@0.0.1920.1040" timestamp="1587835803103" />
     <state x="485" y="211" key="SettingsEditor" timestamp="1587767492180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

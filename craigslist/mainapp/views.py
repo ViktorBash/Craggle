@@ -11,12 +11,24 @@ def home(request):
     return render(request, 'base.html')
 
 
-BASE_CRAIGSLIST_URL = 'https://newjersey.craigslist.org/search/?query={}'
+BASE_CRAIGSLIST_URL = 'https://newjersey.craigslist.org/search/sss?query={}'
 BASE_IMAGE_URL = "https://images.craigslist.org/{}_300x300.jpg"
 
 
 def new_search(request):
     search = request.POST.get('search')
+    min_price = request.POST.get('min_price')
+    max_price = request.POST.get('max_price')
+    print(max_price)
+    print(min_price)
+    try:
+        max_price = int(max_price)
+        min_price = int(min_price)
+    except ValueError:
+        min_price = None
+        max_price = None
+
+
     models.Search.objects.create(search=search)
     # print(search)
     # print(quote_plus(search))
@@ -47,7 +59,7 @@ def new_search(request):
             post_image_id = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
 
             post_image_url = BASE_IMAGE_URL.format(post_image_id)
-            print(post_image_url)
+            # print(post_image_url)
         else:
             post_image_url = 'https:/craigslist.org/images/peace.jpg'
 
@@ -69,6 +81,8 @@ def new_search(request):
     stuff_for_frontend = {
         'search': search,
         'final_postings': final_postings,
+        'min_price': min_price,
+        'max_price': max_price,
     }
     return render(request, 'mainapp/new_search.html', stuff_for_frontend)
 
