@@ -1,8 +1,3 @@
 # SocialMediaDjango
-This will be a social media app written with Django, displaying proficiency with the framework. 
+This Django project is a web scraper that outputs a new GUI for Craigslist in the NJ area. It utilizes Python, Django, HTML/CSS, Materialize, SQLite and BeautifulSoup. 
 
-Goal:
-Make a craigslist app that will have the same functionality, except with a better UI.
-Technologies used:
-Python, Django, BeautifulSoup (Webscraping), HTML/CSS, Materialize CSS Library, Databases
-Possibly Heroku deployment
