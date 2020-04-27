@@ -23,17 +23,27 @@ def new_search(request):
     print(min_price)
     try:
         max_price = int(max_price)
+    except ValueError:
+        max_price = None
+    try:
         min_price = int(min_price)
     except ValueError:
         min_price = None
-        max_price = None
-
 
     models.Search.objects.create(search=search)
     # print(search)
     # print(quote_plus(search))
 
     final_url = BASE_CRAIGSLIST_URL.format(quote_plus(search))
+    if max_price is not None:
+        max_phrase = f"&max_price={max_price}"
+        final_url = f"{final_url}{max_phrase}"
+    if min_price is not None:
+        min_phrase = f"&min_price={min_price}"
+        final_url = f"{final_url}{min_phrase}"
+    print(max_price)
+    print(min_price)
+    print(final_url)
     # print(final_url)
     response = requests.get(final_url)
     data = response.text
@@ -67,12 +77,6 @@ def new_search(request):
         # print('test2')
         final_postings.append((post_title, post_url, post_price, post_image_url))
 
-
-
-
-
-
-
     # print(post_title)
     # print(post_url)
     # print(post_price)
@@ -85,4 +89,3 @@ def new_search(request):
         'max_price': max_price,
     }
     return render(request, 'mainapp/new_search.html', stuff_for_frontend)
-
