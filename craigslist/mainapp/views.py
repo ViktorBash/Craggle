@@ -19,8 +19,8 @@ def new_search(request):
     search = request.POST.get('search')
     min_price = request.POST.get('min_price')
     max_price = request.POST.get('max_price')
-    print(max_price)
-    print(min_price)
+    # print(max_price)
+    # print(min_price)
     try:
         max_price = int(max_price)
     except ValueError:
@@ -41,9 +41,9 @@ def new_search(request):
     if min_price is not None:
         min_phrase = f"&min_price={min_price}"
         final_url = f"{final_url}{min_phrase}"
-    print(max_price)
-    print(min_price)
-    print(final_url)
+    # print(max_price)
+    # print(min_price)
+    # print(final_url)
     # print(final_url)
     response = requests.get(final_url)
     data = response.text

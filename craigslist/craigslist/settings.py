@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -18,16 +19,19 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')  # How Django knows where the
 # PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))  # Not needed atm
 
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9*jgj^#))mu=+l+mb0p8&e!y8=2*t7zna&e&+d)dp_b0d2rk)^'
-
+# SECRET_KEY = '9*jgj^#))mu=+l+mb0p8&e!y8=2*t7zna&e&+d)dp_b0d2rk)^'
+SECRET_KEY = os.environ.get("CRAGGLE_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['craggle.herokuapp.com']
 
 
 # Application definition
@@ -122,3 +126,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+django_heroku.settings(locals())
